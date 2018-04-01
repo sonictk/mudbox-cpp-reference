@@ -1,0 +1,26 @@
+var classmudbox_1_1_attribute_stamp_configuration_widget =
+[
+    [ "AttributeStampConfigurationWidget", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a85782554a1282a60efb2eb9a6562e0e4", null ],
+    [ "UpdateImage", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a316e688533080207dc715d5f779abd43", null ],
+    [ "LoadImage", "classmudbox_1_1_attribute_stamp_configuration_widget.html#aa02ec5b9cf7ba0f5ea80a5b0102e0b23", null ],
+    [ "Update", "classmudbox_1_1_attribute_stamp_configuration_widget.html#af8375debd1361b3f1f2154df2a07924c", null ],
+    [ "OnChange", "classmudbox_1_1_attribute_stamp_configuration_widget.html#afe4c6032b8747d51b6ff888abf9a9f90", null ],
+    [ "OnRotate", "classmudbox_1_1_attribute_stamp_configuration_widget.html#abc0dae810e0dca0a96fbd9edc3b46b06", null ],
+    [ "m_CachedImage", "classmudbox_1_1_attribute_stamp_configuration_widget.html#af99d6a1caad67fda29f7187caaecd7ec", null ],
+    [ "m_CachedImageFileName", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a11c80733a0ec5e5a3c2fa13a33bd0c91", null ],
+    [ "m_cGroupBox", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a6bc0bd6d970cd267ef81b8be9e3c0a55", null ],
+    [ "m_pPreviewImage", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a3ec9885f4069e4c30f777ec6e5e8849c", null ],
+    [ "m_pRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a6f3bbe6b64d059a382939a7d06c394e2", null ],
+    [ "m_pOrientToStroke", "classmudbox_1_1_attribute_stamp_configuration_widget.html#ab7362fee88df3ffcf1c120ff7c92562e", null ],
+    [ "m_pRotateStamp", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a4d72eb08d00886387f472eb2d00b4229", null ],
+    [ "m_pFlipXStamp", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a32f296d8d7155155f8c11cdba31eb68c", null ],
+    [ "m_pFlipYStamp", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a3b8d780d3f8daaae0bee6986f62325d4", null ],
+    [ "m_pRotateRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a1ab1a54e8839646b45f0548d468c26c8", null ],
+    [ "m_pPositionXRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a305e0b68dc0adcd8fd572fc9120139bd", null ],
+    [ "m_pPositionYRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#ac96a09ef75afdfaa5c062ea8a9a9b315", null ],
+    [ "m_pScaleRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#aff0aca57f8e44c361da7f1dc5f13d510", null ],
+    [ "m_pStrengthRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a550a802e303978659393d9669f11e25b", null ],
+    [ "m_pFlipRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a49ef16ae04af8eb5424309b132cf957f", null ],
+    [ "m_pFlopRandomize", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a66e909d2afd892abbcb348741b7a9108", null ],
+    [ "m_bUpdating", "classmudbox_1_1_attribute_stamp_configuration_widget.html#a6ef45172dee61b8400a22d44e7de551f", null ]
+];

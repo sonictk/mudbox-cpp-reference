@@ -1,0 +1,27 @@
+var qmacdefines__mac_8h =
+[
+    [ "OSStatus", "qmacdefines__mac_8h.html#a3558682280c7331d128912d3edd21a61", null ],
+    [ "EventHandlerCallRef", "qmacdefines__mac_8h.html#a99dae9b3f18914b7b4cdbd6c22a98a71", null ],
+    [ "EventRef", "qmacdefines__mac_8h.html#a572a489386d470f4d599ca052b5b189b", null ],
+    [ "MenuRef", "qmacdefines__mac_8h.html#a9eb7e703d944ad4692c51342260524ce", null ],
+    [ "PasteboardRef", "qmacdefines__mac_8h.html#afeb99121ede3c0ba8368d3c211b1a53a", null ],
+    [ "RgnHandle", "qmacdefines__mac_8h.html#ac356933691c5a2aeadf46c14fc5677a6", null ],
+    [ "HIShapeRef", "qmacdefines__mac_8h.html#ade43add98032554f7dcb0275b6f2fd8d", null ],
+    [ "HIMutableShapeRef", "qmacdefines__mac_8h.html#a327dc718639456300ee7f0a19caf5b97", null ],
+    [ "CGRect", "qmacdefines__mac_8h.html#a8e9c074e616df46bc46da80c9d4538aa", null ],
+    [ "CGImageRef", "qmacdefines__mac_8h.html#a75461eac74c23c49c936eb8811388b88", null ],
+    [ "CGContextRef", "qmacdefines__mac_8h.html#aa24159a5753580ec784c2fd390213c7f", null ],
+    [ "GDPtr", "qmacdefines__mac_8h.html#abae5dc2773814ab19bfe3d8d6f9c0612", null ],
+    [ "GDHandle", "qmacdefines__mac_8h.html#a8c0c534265cb1f49048b16eda52a4663", null ],
+    [ "IconRef", "qmacdefines__mac_8h.html#aba74c21f724151d0738e60efd4947b4f", null ],
+    [ "WindowRef", "qmacdefines__mac_8h.html#a018313b70656f253b585c4f89296467f", null ],
+    [ "HIViewRef", "qmacdefines__mac_8h.html#a1b00029fc61e8014bea2a6d7de5b1512", null ],
+    [ "OSWindowRef", "qmacdefines__mac_8h.html#a8965f48887488890d71df88d5ffb561a", null ],
+    [ "OSViewRef", "qmacdefines__mac_8h.html#a03940b55aea13049a16793d044d51ddb", null ],
+    [ "OSMenuRef", "qmacdefines__mac_8h.html#ac776f1ea5eac2429887681cff3d7f430", null ],
+    [ "OSEventRef", "qmacdefines__mac_8h.html#a898305d204f69a36c3f4d979fa1a33b0", null ],
+    [ "OSPasteboardRef", "qmacdefines__mac_8h.html#ad6f945998bc5bb127e25f583853cfeed", null ],
+    [ "AEDescList", "qmacdefines__mac_8h.html#a17d3971536cafc537339a4daad251d59", null ],
+    [ "AERecord", "qmacdefines__mac_8h.html#a1abeb2977cb3a5e6fe67ef62a5197b41", null ],
+    [ "AppleEvent", "qmacdefines__mac_8h.html#ab176eaed3a705367d17cb4d3edc9af28", null ]
+];

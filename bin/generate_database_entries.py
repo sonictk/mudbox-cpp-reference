@@ -36,7 +36,12 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
 
     # Now start finding items within the class pages to add
     # additional entries for
-    html = open(os.path.join(docs_root, path)).read()
+    try:
+        html = open(os.path.join(docs_root, path)).read()
+    except:
+        print('Failed to read file: {}'.format(path))
+        return
+
     soup = BeautifulSoup(html, 'html.parser')
 
     for h2 in soup.find_all('h2', {'class': 'groupheader'}):
@@ -134,35 +139,63 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
     logger = logging.getLogger(__name__)
     conn = sqlite3.connect(database_file_path, timeout=timeout)
     cur = conn.cursor()
-    hwRenderPrefix = 'class_m_h_w_render_1_1_'
+    # NOTE: This is present in some of the HTML files for some weird reason.
+    weird_substring = '_1_1_'
     for f in filenames:
         if os.path.splitext(f)[-1] == '.html':
             if '-members' in f:
                 continue
 
-            if f.startswith(hwRenderPrefix):
-                class_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(f)[0].split(hwRenderPrefix)[-1].split('_')])
-                write_entry_for_class(cur, class_name, f, docs_root, mudbox_version)
+            if weird_substring in f:
+                sanitized_filename = f.replace(weird_substring, '_')
+            else:
+                sanitized_filename = f
 
-            elif f.startswith('class_'):
-                try: class_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(f)[0].split('class_')[-1].split('_')])
+            if f.startswith('class_'):
+                try: class_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('class_')[-1].split('_')])
                 except:
                     print('error occurred trying to parse: {}'.format(f))
                     continue
+                print('class name determined as: {}'.format(class_name))
+                write_entry_for_class(cur, class_name, f, docs_root, mudbox_version)
+
+            elif f.startswith('classmudbox_'):
+                try:
+                    class_name = 'mudbox::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('classmudbox_')[-1].split('_')])
+                except:
+                    print('error occurred trying to parse: {}'.format(f))
+                    continue
+                print('class name determined as: {}'.format(class_name))
                 write_entry_for_class(cur, class_name, f, docs_root, mudbox_version)
 
             elif f.startswith('struct_'):
-                struct_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(f)[0].split('struct_')[-1].split('_') if a])
+                struct_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('struct_')[-1].split('_') if a])
+                print('struct name determined as: {}'.format(struct_name))
+                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                        ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+
+            # NOTE: Again, because the documentation is inconsistent with the prefixes.
+            elif f.startswith('structmudbox_'):
+                struct_name = 'mudbox::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('structmudbox_')[-1].split('_')])
+                print('struct name determined as: {}'.format(struct_name))
+                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                        ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+
+            elif f.startswith('structadsk_'):
+                struct_name = 'adsk::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('structadsk_')[-1].split('_')])
+                print('struct name determined as: {}'.format(struct_name))
                 cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
                         ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
 
             elif f.startswith('namespace'):
-                namespace_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(f)[0].replace('namespace', '').split('_') if a])
+                namespace_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].replace('namespace', '').split('_') if a])
+                print('namespace name determined as: {}'.format(namespace_name))
                 cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
                         ' VALUES (\'{name}\', \'Namespace\', \'{path}\')'.format(name=namespace_name, path=f))
 
             elif '-example' in f:
-                example_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(f)[0].split('-example')[0].split('_') if a]) + 'Example'
+                example_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('-example')[0].split('_') if a]) + 'Example'
+                print('example name determined as: {}'.format(example_name))
                 cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
                         ' VALUES (\'{name}\', \'Sample\', \'{path}\')'.format(name=example_name, path=f))
 

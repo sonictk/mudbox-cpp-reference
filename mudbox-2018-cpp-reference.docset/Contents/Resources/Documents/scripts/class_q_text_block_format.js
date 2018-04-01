@@ -1,0 +1,38 @@
+var class_q_text_block_format =
+[
+    [ "LineHeightTypes", "class_q_text_block_format.html#a9f7ddbf0434dbe393098ff483b4b342c", [
+      [ "SingleHeight", "class_q_text_block_format.html#a9f7ddbf0434dbe393098ff483b4b342caa1597a720c0eb934b1643c8fe7665f60", null ],
+      [ "ProportionalHeight", "class_q_text_block_format.html#a9f7ddbf0434dbe393098ff483b4b342caed0a32b15ff862624ded192238833ad0", null ],
+      [ "FixedHeight", "class_q_text_block_format.html#a9f7ddbf0434dbe393098ff483b4b342ca1ffbb82dcb8507a35e3dbef14726bfd8", null ],
+      [ "MinimumHeight", "class_q_text_block_format.html#a9f7ddbf0434dbe393098ff483b4b342ca2e14c6aaf4fd04196186bb33f1061718", null ],
+      [ "LineDistanceHeight", "class_q_text_block_format.html#a9f7ddbf0434dbe393098ff483b4b342ca7741d04ab58646b7b46c96a6db13a92e", null ]
+    ] ],
+    [ "QTextBlockFormat", "class_q_text_block_format.html#a45f787e0f5661d83eb7078e06b36753d", null ],
+    [ "QTextBlockFormat", "class_q_text_block_format.html#a05f27df1bcbdc409ffc422c42fe5e46a", null ],
+    [ "isValid", "class_q_text_block_format.html#aac1b70a2ed67ead038c4d3f5ac4d8a81", null ],
+    [ "setAlignment", "class_q_text_block_format.html#a7ffc2d5606a49e880fa9647d1d96d404", null ],
+    [ "alignment", "class_q_text_block_format.html#add5b7da18790b34effdeef0af893c90f", null ],
+    [ "setTopMargin", "class_q_text_block_format.html#a7a832f4334305590e276e16761e70471", null ],
+    [ "topMargin", "class_q_text_block_format.html#aec7bbe97b781ad05ae88d196b91946f0", null ],
+    [ "setBottomMargin", "class_q_text_block_format.html#a60b8a25728e92f8cb18577b397ec7351", null ],
+    [ "bottomMargin", "class_q_text_block_format.html#a46b3d55ca9f7a8bbc4364de5f75b9544", null ],
+    [ "setLeftMargin", "class_q_text_block_format.html#a67bb0f29adc1a9b5ffab87e21539d2c7", null ],
+    [ "leftMargin", "class_q_text_block_format.html#a9c5d4c8d8d43c938b03a16f0a2159a06", null ],
+    [ "setRightMargin", "class_q_text_block_format.html#ab00a1433b04e81b14eab2349eaf388f4", null ],
+    [ "rightMargin", "class_q_text_block_format.html#a3a9e346a28a6c0a39357f2023111cdb1", null ],
+    [ "setTextIndent", "class_q_text_block_format.html#a30749b43c66264ce0253c0b23c03a225", null ],
+    [ "textIndent", "class_q_text_block_format.html#a0db1fe2ed7c37822a1b9171f37932bfa", null ],
+    [ "setIndent", "class_q_text_block_format.html#a1cd19c7fb8be16afbf64aaa2e0f09cb5", null ],
+    [ "indent", "class_q_text_block_format.html#ae94194a3bbb081b2e956a6699306c1a9", null ],
+    [ "setLineHeight", "class_q_text_block_format.html#ac1b983da0bac3287ccad2e1549386664", null ],
+    [ "lineHeight", "class_q_text_block_format.html#a26fd8ac7f646845097d1ba085759e4bc", null ],
+    [ "lineHeight", "class_q_text_block_format.html#a4f0db9cf3ebf5d74b7a5a65f3765fbbd", null ],
+    [ "lineHeightType", "class_q_text_block_format.html#a24368a8ec77a6aca3b58c45950e9bd94", null ],
+    [ "setNonBreakableLines", "class_q_text_block_format.html#acb9413bc57956587510da3894138ac0c", null ],
+    [ "nonBreakableLines", "class_q_text_block_format.html#ab1c51f5680b8e91adab8eec2f89cacb3", null ],
+    [ "setPageBreakPolicy", "class_q_text_block_format.html#a3ff0c4addab3895b097de024dbcd4edf", null ],
+    [ "pageBreakPolicy", "class_q_text_block_format.html#a82501580a537f9f5dfb86157e30bce31", null ],
+    [ "setTabPositions", "class_q_text_block_format.html#a91d3d9e89654d31f27726c43057b8a17", null ],
+    [ "tabPositions", "class_q_text_block_format.html#a5cb6c3b76663bea5395a89ed256295b5", null ],
+    [ "QTextFormat", "class_q_text_block_format.html#acf71d4db71211a6a8fcfdd8938ccabf5", null ]
+];

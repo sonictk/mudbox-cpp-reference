@@ -1,0 +1,25 @@
+var class_q_screen_cursor =
+[
+    [ "QScreenCursor", "class_q_screen_cursor.html#a89bd679a125aa27e45637c05f1311e20", null ],
+    [ "~QScreenCursor", "class_q_screen_cursor.html#aff5bccf269ae87a8715f5cf3eb3c40b2", null ],
+    [ "set", "class_q_screen_cursor.html#ab73bfbf22af53796342e3db49099920b", null ],
+    [ "move", "class_q_screen_cursor.html#a8df6e8a202eb9c00e2b6a14ee91e618d", null ],
+    [ "show", "class_q_screen_cursor.html#a7709fb8c9f05a548a734905cd43b87e6", null ],
+    [ "hide", "class_q_screen_cursor.html#ac4e19822b7958c18cad689404913b89a", null ],
+    [ "supportsAlphaCursor", "class_q_screen_cursor.html#a22bd1d20e6e992dabf7ccbd5fe4597a9", null ],
+    [ "enabled", "class_q_screen_cursor.html#af0c1a3e6f2be36e95694c03c291f2495", null ],
+    [ "boundingRect", "class_q_screen_cursor.html#a8457f1548c3fedd0f16eac04ffc938fa", null ],
+    [ "image", "class_q_screen_cursor.html#af8f36d3e5156ef5aea190590e5bfa369", null ],
+    [ "isVisible", "class_q_screen_cursor.html#a08422ee75ab02691943c1ca87e2bc563", null ],
+    [ "isAccelerated", "class_q_screen_cursor.html#aba4cf695d6a03b9e6664d7faaf3d9ea3", null ],
+    [ "initSoftwareCursor", "class_q_screen_cursor.html#a9eacb8a000f0dca99a9083d5adf58830", null ],
+    [ "instance", "class_q_screen_cursor.html#ad6e0a61343baee8cb7437cca3d009c79", null ],
+    [ "QProxyScreenCursor", "class_q_screen_cursor.html#a0a79fc8360185df36c8a9ef46bf56dd5", null ],
+    [ "cursor", "class_q_screen_cursor.html#a79b6e3e0e241c76e325c99a032a7a650", null ],
+    [ "size", "class_q_screen_cursor.html#a3d35d44d9c21b79d565669248204c412", null ],
+    [ "pos", "class_q_screen_cursor.html#ac9ed06caaeda977f81a466127fd2ad37", null ],
+    [ "hotspot", "class_q_screen_cursor.html#a49f19a8105a892c885957f20e4650949", null ],
+    [ "enable", "class_q_screen_cursor.html#a82f4a07ed614a004c7c9ca4fbf046a08", null ],
+    [ "hwaccel", "class_q_screen_cursor.html#acef8d95c05e8c39c88a46e03662981ba", null ],
+    [ "supportsAlpha", "class_q_screen_cursor.html#a521897dcbbaccbdc677189e839e890c6", null ]
+];

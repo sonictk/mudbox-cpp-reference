@@ -1,0 +1,25 @@
+var qwindowdefs__win_8h =
+[
+    [ "Q_WINSTRICT", "qwindowdefs__win_8h.html#abe495c34825d2f2fdc81dbd13cbb970e", null ],
+    [ "STRICT", "qwindowdefs__win_8h.html#a8a7c30a576d5706b6c0821834d01cbbc", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#a1db72f5cdce137e90717f7307fa76fef", null ],
+    [ "HCURSOR", "qwindowdefs__win_8h.html#aea118e5e4dd87d703acd36549f569165", null ],
+    [ "HRESULT", "qwindowdefs__win_8h.html#a47da19e2d1dc81e8e185a0f65c27d463", null ],
+    [ "MSG", "qwindowdefs__win_8h.html#a265b9da67b147ab4e17c3001bed97930", null ],
+    [ "WId", "qwindowdefs__win_8h.html#ad1e28290727fdb1a9d5c579b6294a98c", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#ae563ec8f232fd9664ee4d11824ad5afd", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#ab54778faa9c6e08b767fc239bebbb456", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#ae767cb325c767c8829000a2d5ede664a", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#af07710b293a70dc60779e8b14ee274f7", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#ac50c0b087c6e24ee4e99f3a490bf7bce", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#a39fb1fb00e2a467d71906f866ea80a1a", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#a58b8dccc8cac9dc4aa91a96868283f91", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#acc17e84e74314fa98d1fd1291ce6a94d", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#a1296458af20f6655fcc9e29b4e679f5b", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#afa79357f831414e25ccca6f867036989", null ],
+    [ "Q_DECLARE_HANDLE", "qwindowdefs__win_8h.html#a3c0b19cd96cc70fed18d99aabb0fb755", null ],
+    [ "qWinAppInst", "qwindowdefs__win_8h.html#a854a34c8fbff2f2b6a54f7f4ad335e76", null ],
+    [ "qWinAppPrevInst", "qwindowdefs__win_8h.html#a32e57ab4f1e97c74e11a35045879baff", null ],
+    [ "qWinAppCmdShow", "qwindowdefs__win_8h.html#ad516a24a497eb39db7c965faa19e16a5", null ],
+    [ "qt_win_display_dc", "qwindowdefs__win_8h.html#a05fb97486c8babe9d4826e6211d9fe16", null ]
+];

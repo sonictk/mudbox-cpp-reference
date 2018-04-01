@@ -1,0 +1,26 @@
+var class_q_shared_data_pointer =
+[
+    [ "Type", "class_q_shared_data_pointer.html#a685b7a70f0ae1f2881cf8937d951c3b1", null ],
+    [ "pointer", "class_q_shared_data_pointer.html#a680c78d51cff3fd301666dd75bdbe49d", null ],
+    [ "QSharedDataPointer", "class_q_shared_data_pointer.html#aa32736d2733c69b5b76cc0e118f0cf60", null ],
+    [ "~QSharedDataPointer", "class_q_shared_data_pointer.html#a964399d897e0e62319c492efbef4259b", null ],
+    [ "QSharedDataPointer", "class_q_shared_data_pointer.html#a6e4d45cfd9429fbcd9d612c9b62b4c44", null ],
+    [ "QSharedDataPointer", "class_q_shared_data_pointer.html#a3648f8876618c9e18481408b779c2b4e", null ],
+    [ "detach", "class_q_shared_data_pointer.html#ac295bade8aee589f6718dfa79edc2a34", null ],
+    [ "operator*", "class_q_shared_data_pointer.html#af7f8c6b921dca2b94f6e7ee14e762770", null ],
+    [ "operator*", "class_q_shared_data_pointer.html#a0ad02595c2fdf7a496eda1d646060eab", null ],
+    [ "operator->", "class_q_shared_data_pointer.html#af6e485beee07fd401de29c8cdf898c69", null ],
+    [ "operator->", "class_q_shared_data_pointer.html#ab3d07abe897387f8cf2f097d1550b189", null ],
+    [ "operator T *", "class_q_shared_data_pointer.html#a4e20322854ce5d78776cdaf1a87aacd9", null ],
+    [ "operator const T *", "class_q_shared_data_pointer.html#af015545c1c88375a1fff0fd898f0d34e", null ],
+    [ "data", "class_q_shared_data_pointer.html#a1699472936b80a88d3fc8096975d21b2", null ],
+    [ "data", "class_q_shared_data_pointer.html#a92597b6ad54c8cebd6a987b7762eecfc", null ],
+    [ "constData", "class_q_shared_data_pointer.html#a4341d2f827b5e261162a4fa79f728271", null ],
+    [ "operator==", "class_q_shared_data_pointer.html#a31cb7d71b7712051b22f5fa59801d8c6", null ],
+    [ "operator!=", "class_q_shared_data_pointer.html#a0a561da3c0c78ea68d7aed0387675d85", null ],
+    [ "operator=", "class_q_shared_data_pointer.html#a2c205e79138f33d8c2cc08a049fa5797", null ],
+    [ "operator=", "class_q_shared_data_pointer.html#af5fc199da64fa4c9b4f4f241fbbdfcf1", null ],
+    [ "operator!", "class_q_shared_data_pointer.html#ac8b1d32dbd52d431450c70b151cfa205", null ],
+    [ "swap", "class_q_shared_data_pointer.html#afe3795e8cc0ea8469ca61784919b2b10", null ],
+    [ "clone", "class_q_shared_data_pointer.html#a74a467d6e5bebb49771f945511394804", null ]
+];

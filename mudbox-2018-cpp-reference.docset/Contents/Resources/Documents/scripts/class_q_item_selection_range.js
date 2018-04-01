@@ -1,0 +1,28 @@
+var class_q_item_selection_range =
+[
+    [ "QItemSelectionRange", "class_q_item_selection_range.html#ae97dd9f5ce5869ca7b44e34f38760079", null ],
+    [ "QItemSelectionRange", "class_q_item_selection_range.html#a7466ae3db78d6d90d554b203d9909dd8", null ],
+    [ "QItemSelectionRange", "class_q_item_selection_range.html#a21a87fefd38d3674cc39af87a68d635b", null ],
+    [ "QItemSelectionRange", "class_q_item_selection_range.html#a8bd7b9307e2184035538feb6ed65136c", null ],
+    [ "top", "class_q_item_selection_range.html#ae8fc263e094c9367712a452ad522bf08", null ],
+    [ "left", "class_q_item_selection_range.html#a265321ef4c7ad76f60e512fc09eef7c2", null ],
+    [ "bottom", "class_q_item_selection_range.html#a02c3eeeccf5a7236f7029cdd9489075f", null ],
+    [ "right", "class_q_item_selection_range.html#ad04ec796f4e7db479575644d114974ef", null ],
+    [ "width", "class_q_item_selection_range.html#a369399896761e31ae71db57fdd0ba431", null ],
+    [ "height", "class_q_item_selection_range.html#ae26bcfe2f33f5873dbdfb6948cf1f59f", null ],
+    [ "topLeft", "class_q_item_selection_range.html#a87c574b7ccadfe12ec8ab9d91cfea956", null ],
+    [ "bottomRight", "class_q_item_selection_range.html#a338327c1e5e77839f48fc1b91777275f", null ],
+    [ "parent", "class_q_item_selection_range.html#a7c74c6fa5f07a6a8ee30af325352af82", null ],
+    [ "model", "class_q_item_selection_range.html#aacbdfafe3b2a4332ebb666b275fd9569", null ],
+    [ "contains", "class_q_item_selection_range.html#a26ba3bf6ab6cb9a2518dd1b4c24c1080", null ],
+    [ "contains", "class_q_item_selection_range.html#aacdd04cc3760fb0dd00ffaa5fa32c87b", null ],
+    [ "intersects", "class_q_item_selection_range.html#ae4abe06adaf86e7a41ec976cac064e8c", null ],
+    [ "intersect", "class_q_item_selection_range.html#a817a1f470d368f172fb85799766fe46f", null ],
+    [ "intersected", "class_q_item_selection_range.html#a3de2a17c30a5660451d557398f9af656", null ],
+    [ "operator==", "class_q_item_selection_range.html#a46ab7378263e80a69cb295d247da78d7", null ],
+    [ "operator!=", "class_q_item_selection_range.html#a74489c1c8b1fa8d312b773d80891b951", null ],
+    [ "operator<", "class_q_item_selection_range.html#a25f1f8c78c7632fe4bd96b32b50c3473", null ],
+    [ "isValid", "class_q_item_selection_range.html#aac1b70a2ed67ead038c4d3f5ac4d8a81", null ],
+    [ "isEmpty", "class_q_item_selection_range.html#a479432127ee77145cc19d6a2d1590821", null ],
+    [ "indexes", "class_q_item_selection_range.html#a471e8169595669e0bfe26b266faa1e85", null ]
+];

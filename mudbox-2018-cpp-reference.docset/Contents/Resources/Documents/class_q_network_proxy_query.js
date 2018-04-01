@@ -1,0 +1,35 @@
+var class_q_network_proxy_query =
+[
+    [ "QueryType", "class_q_network_proxy_query.html#abfbb64a2ec7afa6cbb18aa171775c9ec", [
+      [ "TcpSocket", "class_q_network_proxy_query.html#abfbb64a2ec7afa6cbb18aa171775c9eca2fb7deef2773469c23a85f2c49c5f788", null ],
+      [ "UdpSocket", "class_q_network_proxy_query.html#abfbb64a2ec7afa6cbb18aa171775c9eca8d9a29716da4b043154c5e31c26a80ea", null ],
+      [ "TcpServer", "class_q_network_proxy_query.html#abfbb64a2ec7afa6cbb18aa171775c9ecaf19f41237a668ecd2bfba27bad5c615c", null ],
+      [ "UrlRequest", "class_q_network_proxy_query.html#abfbb64a2ec7afa6cbb18aa171775c9ecab336df80b69e48cee350e134a0b23bed", null ]
+    ] ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#a1d3effc0e5850d7078a9eeb2ecad3ad3", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#a0022089e7fddb838f077842fec17c8ab", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#ae1991af01982c88a07460d55adab1cb4", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#a9f7e98216e95abfbc77c4f2b93eb150f", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#acb44b3a52d8701b26b1e8a653611bf56", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#a44a15265e9dbead2403170fd15e7f828", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#a3178bfcf4dc966cf26d87262eae1f914", null ],
+    [ "QNetworkProxyQuery", "class_q_network_proxy_query.html#ae64a746f30065b96b74f8cf6caabae5a", null ],
+    [ "~QNetworkProxyQuery", "class_q_network_proxy_query.html#a3ff2de5e2ff66e3c26ccb339638a1305", null ],
+    [ "operator=", "class_q_network_proxy_query.html#ad7978f4e7809a85f0d8f25e914b60e2b", null ],
+    [ "operator==", "class_q_network_proxy_query.html#a34dd070996abeb24d4ec6bb37a0f61d0", null ],
+    [ "operator!=", "class_q_network_proxy_query.html#a0129b01c6e2801cfa5d0cafcc8a7af9f", null ],
+    [ "queryType", "class_q_network_proxy_query.html#a649ea7af52202d9c8d88d8e1173a4e32", null ],
+    [ "setQueryType", "class_q_network_proxy_query.html#a92b15a21345dd3201f7229048b99d4fd", null ],
+    [ "peerPort", "class_q_network_proxy_query.html#a00ce76a4cac72b4ccf9cbac1191109ae", null ],
+    [ "setPeerPort", "class_q_network_proxy_query.html#a8cbc7bc701b0677bc1e6778259cb7577", null ],
+    [ "peerHostName", "class_q_network_proxy_query.html#add39232c44eb6f18d514be1488bf1449", null ],
+    [ "setPeerHostName", "class_q_network_proxy_query.html#aa95d0fddf488b21a5554557d54680b91", null ],
+    [ "localPort", "class_q_network_proxy_query.html#afda17e218de321335c64717e7957578c", null ],
+    [ "setLocalPort", "class_q_network_proxy_query.html#ac4f70a2a024bb40eeee488ba90b83cd9", null ],
+    [ "protocolTag", "class_q_network_proxy_query.html#a6d7df11c1ac4ea5e4324cff39e3e18c1", null ],
+    [ "setProtocolTag", "class_q_network_proxy_query.html#adaacc2574eeb0d343a59c6c014e04c32", null ],
+    [ "url", "class_q_network_proxy_query.html#a2c14c7c8e8d4afe8836b82af641f12cc", null ],
+    [ "setUrl", "class_q_network_proxy_query.html#aa5194c82d70b018411997b86597bcb91", null ],
+    [ "networkConfiguration", "class_q_network_proxy_query.html#a066c8d41434022fe53455060e7bb9ed3", null ],
+    [ "setNetworkConfiguration", "class_q_network_proxy_query.html#a876942f95fc49de8ccf0b746d1aca08f", null ]
+];

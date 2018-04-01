@@ -1,0 +1,25 @@
+var structmudbox_1_1_brush_mask =
+[
+    [ "BrushMask", "structmudbox_1_1_brush_mask.html#acacea1ffb66c0842099da9936637bdc7", null ],
+    [ "~BrushMask", "structmudbox_1_1_brush_mask.html#aae14034c5523f21a73bf93d6596e44e7", null ],
+    [ "SetState", "structmudbox_1_1_brush_mask.html#a4461884eb47b1cce3bacd311ae1190c3", null ],
+    [ "State", "structmudbox_1_1_brush_mask.html#a427e9f0dc0f3f810b2a3df61d27ca7b1", null ],
+    [ "Factor", "structmudbox_1_1_brush_mask.html#a67b9e3347191ea17da4b8a6de52741ff", null ],
+    [ "SetFactor", "structmudbox_1_1_brush_mask.html#a22529dca22ff33da95fc8221cbf017b4", null ],
+    [ "SetTransformation", "structmudbox_1_1_brush_mask.html#a643bdfd4209265d43a8326cdfb34e40a", null ],
+    [ "Transformation", "structmudbox_1_1_brush_mask.html#aab576c6b2029b36bce74664c363b886d", null ],
+    [ "Image", "structmudbox_1_1_brush_mask.html#a8c89eb462f318e4a9854db21314b9ec2", null ],
+    [ "SetImage", "structmudbox_1_1_brush_mask.html#abcf320945f5272702d0f0845d7269a66", null ],
+    [ "Clear", "structmudbox_1_1_brush_mask.html#a666736fbd0ebb8dc7e6ff3392423d6c0", null ],
+    [ "SetFileName", "structmudbox_1_1_brush_mask.html#a8c15a31fd36c2e19af48eed76d7ced04", null ],
+    [ "CreateTextures", "structmudbox_1_1_brush_mask.html#ae4d5a3d7f9b3fbe6521407e95362a91d", null ],
+    [ "GetFileName", "structmudbox_1_1_brush_mask.html#aa84671be263f3778d816c411b087da06", null ],
+    [ "DECLARE_CLASS", "structmudbox_1_1_brush_mask.html#acb766c5246456bdf00e141ddf4d23759", null ],
+    [ "m_mTransformation", "structmudbox_1_1_brush_mask.html#a3a9f50a881fff7b3e36d57123de3a7b2", null ],
+    [ "m_fAspectRatio", "structmudbox_1_1_brush_mask.html#a552436f23bf9682e070d66723a1cfd9c", null ],
+    [ "m_pImage", "structmudbox_1_1_brush_mask.html#abb4646e3ad5767af59bfa901dc12b772", null ],
+    [ "m_pLuminanceTexture", "structmudbox_1_1_brush_mask.html#a47c15155cc294a362c360c5a72ba7d2d", null ],
+    [ "m_bState", "structmudbox_1_1_brush_mask.html#ad08c065cf871a1f564a959b898b9d31b", null ],
+    [ "m_fFactor", "structmudbox_1_1_brush_mask.html#aad21eb42a8fc2e43f7587d0664793950", null ],
+    [ "m_sFileName", "structmudbox_1_1_brush_mask.html#a5be2a066f1f0983c12398bc3ad46424a", null ]
+];

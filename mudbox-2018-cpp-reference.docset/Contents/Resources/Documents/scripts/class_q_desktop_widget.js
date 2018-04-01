@@ -1,0 +1,27 @@
+var class_q_desktop_widget =
+[
+    [ "QDesktopWidget", "class_q_desktop_widget.html#a267231de74bd081e8600b9c6d456203d", null ],
+    [ "~QDesktopWidget", "class_q_desktop_widget.html#aed5903a6375d82c1a70e47afbe2e3fcc", null ],
+    [ "isVirtualDesktop", "class_q_desktop_widget.html#aaf862649612b94bb54bf1174d7f37cb2", null ],
+    [ "numScreens", "class_q_desktop_widget.html#ad6437eefd1ea2099a56787df4672ea3c", null ],
+    [ "screenCount", "class_q_desktop_widget.html#a68dc779dfeef010009e38a5e787ec55b", null ],
+    [ "primaryScreen", "class_q_desktop_widget.html#a9c8ef49ca8b36f81dc798feb21a4532b", null ],
+    [ "screenNumber", "class_q_desktop_widget.html#a0ebe329e5b15ed76e617f7352df3c631", null ],
+    [ "screenNumber", "class_q_desktop_widget.html#ae88c9653e6de485b782e625101f1bacd", null ],
+    [ "screen", "class_q_desktop_widget.html#a2cb801fcfe9d7bc1ecd7e3cb0a1e3a71", null ],
+    [ "screenGeometry", "class_q_desktop_widget.html#a92db815c796d4408836c2f5c98365153", null ],
+    [ "screenGeometry", "class_q_desktop_widget.html#a43f4f37a8b4bd77040ddeecc8afacabb", null ],
+    [ "screenGeometry", "class_q_desktop_widget.html#ab30c31b6ac5596e96d088b2b57ad433a", null ],
+    [ "availableGeometry", "class_q_desktop_widget.html#af7ea687a8eddccc989648fd6bc0b3cf1", null ],
+    [ "availableGeometry", "class_q_desktop_widget.html#a5b92912878dbc945ff75698d4770b192", null ],
+    [ "availableGeometry", "class_q_desktop_widget.html#a0f0bd75ad5ddd91af28696106f37d5ba", null ],
+    [ "resized", "class_q_desktop_widget.html#afd2be00315edc9f76f03549b5cc4d603", null ],
+    [ "workAreaResized", "class_q_desktop_widget.html#a03a8da0c41a91bcc5630e644791006d6", null ],
+    [ "screenCountChanged", "class_q_desktop_widget.html#a1708465eda3a5b5a3a10ab99815c84c0", null ],
+    [ "resizeEvent", "class_q_desktop_widget.html#a187352630b824a4dadd3139b95cf6215", null ],
+    [ "QApplication", "class_q_desktop_widget.html#a8da0851f3642ab58835a6914112b9f05", null ],
+    [ "QApplicationPrivate", "class_q_desktop_widget.html#a6b7c899e19497784e6012c1da3205e48", null ],
+    [ "virtualDesktop", "class_q_desktop_widget.html#abc4d4dfc4d1ec2d7dea8fe873c0710d3", null ],
+    [ "screenCount", "class_q_desktop_widget.html#ac32d344f475d0b3b01bb5a8e4bce441c", null ],
+    [ "primaryScreen", "class_q_desktop_widget.html#ad0cf745313eb5cbcae078823c3797a60", null ]
+];

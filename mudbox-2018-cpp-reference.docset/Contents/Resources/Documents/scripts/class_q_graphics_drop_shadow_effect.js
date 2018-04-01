@@ -1,0 +1,27 @@
+var class_q_graphics_drop_shadow_effect =
+[
+    [ "QGraphicsDropShadowEffect", "class_q_graphics_drop_shadow_effect.html#aa1cbdbb38579e5806631108d66b9d6e5", null ],
+    [ "~QGraphicsDropShadowEffect", "class_q_graphics_drop_shadow_effect.html#a62c9f85d398be30753f50e1f7b25b92a", null ],
+    [ "boundingRectFor", "class_q_graphics_drop_shadow_effect.html#a0f63fb7a6e21e2701fbbfef89d933c82", null ],
+    [ "offset", "class_q_graphics_drop_shadow_effect.html#adf94ec3c7e51320ea2899bea30918352", null ],
+    [ "xOffset", "class_q_graphics_drop_shadow_effect.html#add456209e428b0b7d408f95e8ec20654", null ],
+    [ "yOffset", "class_q_graphics_drop_shadow_effect.html#af2a01097848842a856443a0bfaa71707", null ],
+    [ "blurRadius", "class_q_graphics_drop_shadow_effect.html#ac7c91f3e447f5450bbb608c6f56c1d03", null ],
+    [ "color", "class_q_graphics_drop_shadow_effect.html#ae35093fbf4f645dcefd930ca8c68b622", null ],
+    [ "setOffset", "class_q_graphics_drop_shadow_effect.html#ae06d14ca54ad15d7338b6e9bbaff64e1", null ],
+    [ "setOffset", "class_q_graphics_drop_shadow_effect.html#ad282b19bb15444161d9c2e3bc63821fd", null ],
+    [ "setOffset", "class_q_graphics_drop_shadow_effect.html#a67d500b0d16fda40ab5cb10605e35c15", null ],
+    [ "setXOffset", "class_q_graphics_drop_shadow_effect.html#a16604729c387d33294add70c5dc14096", null ],
+    [ "setYOffset", "class_q_graphics_drop_shadow_effect.html#aa9334d9b0234fca70f680e02e76d5c0c", null ],
+    [ "setBlurRadius", "class_q_graphics_drop_shadow_effect.html#ae16fedb901ab44eabedd279d8593a84f", null ],
+    [ "setColor", "class_q_graphics_drop_shadow_effect.html#a858bbcf98637471449e438304a00624b", null ],
+    [ "offsetChanged", "class_q_graphics_drop_shadow_effect.html#afef7516c0aa57282c4bb88088b75632c", null ],
+    [ "blurRadiusChanged", "class_q_graphics_drop_shadow_effect.html#a09fda6107a5e02e8efd6bc8eb636fd26", null ],
+    [ "colorChanged", "class_q_graphics_drop_shadow_effect.html#a3f19118d4cfbc6ce9c8d1ef9c12e48ec", null ],
+    [ "draw", "class_q_graphics_drop_shadow_effect.html#ac15c7d6826cc7504e9f6591bc4df501c", null ],
+    [ "offset", "class_q_graphics_drop_shadow_effect.html#a8328f0a340ec3cf9dd7b6441c23ccd0b", null ],
+    [ "xOffset", "class_q_graphics_drop_shadow_effect.html#a3f72a4ce5ba2a5c4fd84fe19e48169e9", null ],
+    [ "yOffset", "class_q_graphics_drop_shadow_effect.html#a025f92dabf68855d02e6e1a4daf0a5f8", null ],
+    [ "blurRadius", "class_q_graphics_drop_shadow_effect.html#a0d46250511b3a1782bd2e431036cf089", null ],
+    [ "color", "class_q_graphics_drop_shadow_effect.html#a824cb7f78107b86b9ddc2dcbd285f66b", null ]
+];

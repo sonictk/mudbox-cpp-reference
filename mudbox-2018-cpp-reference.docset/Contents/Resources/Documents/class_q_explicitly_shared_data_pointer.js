@@ -1,0 +1,27 @@
+var class_q_explicitly_shared_data_pointer =
+[
+    [ "Type", "class_q_explicitly_shared_data_pointer.html#a685b7a70f0ae1f2881cf8937d951c3b1", null ],
+    [ "pointer", "class_q_explicitly_shared_data_pointer.html#a680c78d51cff3fd301666dd75bdbe49d", null ],
+    [ "QExplicitlySharedDataPointer", "class_q_explicitly_shared_data_pointer.html#ad9f9c997826077843df738c5ad27f0ec", null ],
+    [ "~QExplicitlySharedDataPointer", "class_q_explicitly_shared_data_pointer.html#a27b6f052779730b974d44a0653139aea", null ],
+    [ "QExplicitlySharedDataPointer", "class_q_explicitly_shared_data_pointer.html#ac0457476b6b5647c2061d63b806b1cc8", null ],
+    [ "QExplicitlySharedDataPointer", "class_q_explicitly_shared_data_pointer.html#a1065543008b985d29c8f9cd71b0aa732", null ],
+    [ "QExplicitlySharedDataPointer", "class_q_explicitly_shared_data_pointer.html#a274a897c89f6b1c61cc80955247be781", null ],
+    [ "operator*", "class_q_explicitly_shared_data_pointer.html#abcc36ef133f26e7e3145b785df23eb18", null ],
+    [ "operator->", "class_q_explicitly_shared_data_pointer.html#af6e485beee07fd401de29c8cdf898c69", null ],
+    [ "operator->", "class_q_explicitly_shared_data_pointer.html#ac0ddd007dfcfef3121f74d0665dfd0cd", null ],
+    [ "data", "class_q_explicitly_shared_data_pointer.html#aaaaa205cc058c6b94e3346cb51ebd01c", null ],
+    [ "constData", "class_q_explicitly_shared_data_pointer.html#a4341d2f827b5e261162a4fa79f728271", null ],
+    [ "detach", "class_q_explicitly_shared_data_pointer.html#ac295bade8aee589f6718dfa79edc2a34", null ],
+    [ "reset", "class_q_explicitly_shared_data_pointer.html#ad20897c5c8bd47f5d4005989bead0e55", null ],
+    [ "operator bool", "class_q_explicitly_shared_data_pointer.html#aa385aa18f5e42db5a415c25a90f4193d", null ],
+    [ "operator==", "class_q_explicitly_shared_data_pointer.html#ad16f9630ba54c297736d672f69ba4014", null ],
+    [ "operator!=", "class_q_explicitly_shared_data_pointer.html#afbdd6c55ff1095cac78d4b6c937716c4", null ],
+    [ "operator==", "class_q_explicitly_shared_data_pointer.html#a8afbf4935ee3f4bf050e5abc420c3bc8", null ],
+    [ "operator!=", "class_q_explicitly_shared_data_pointer.html#ab8c020b03e20bf75a2cfb352c079b17f", null ],
+    [ "operator=", "class_q_explicitly_shared_data_pointer.html#add9bf23ff7746811f08dbc165ee3dc98", null ],
+    [ "operator=", "class_q_explicitly_shared_data_pointer.html#a7ce327097d9b84eae0f95fb19f594f17", null ],
+    [ "operator!", "class_q_explicitly_shared_data_pointer.html#ac8b1d32dbd52d431450c70b151cfa205", null ],
+    [ "swap", "class_q_explicitly_shared_data_pointer.html#adea65cb974880ecc801309c94d2fe6fa", null ],
+    [ "clone", "class_q_explicitly_shared_data_pointer.html#a74a467d6e5bebb49771f945511394804", null ]
+];

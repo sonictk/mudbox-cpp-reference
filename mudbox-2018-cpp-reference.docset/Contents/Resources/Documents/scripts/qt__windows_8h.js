@@ -1,0 +1,26 @@
+var qt__windows_8h =
+[
+    [ "SPI_SETMENUANIMATION", "qt__windows_8h.html#a6d856e44ef4a6fd4cc441b9d4c77d634", null ],
+    [ "SPI_SETMENUFADE", "qt__windows_8h.html#a2859e98981acfabdf51f18352e415d35", null ],
+    [ "SPI_SETCOMBOBOXANIMATION", "qt__windows_8h.html#aa3da808952da2c4ad8ebf69877314449", null ],
+    [ "SPI_SETTOOLTIPANIMATION", "qt__windows_8h.html#a97c9241c2e8cb853ceaa703a3baa263f", null ],
+    [ "SPI_SETTOOLTIPFADE", "qt__windows_8h.html#acd0030d634eb0ae2a987eb0ed9419ae9", null ],
+    [ "SPI_SETUIEFFECTS", "qt__windows_8h.html#a89511f79bcb4508add68dbf1a05d1c3f", null ],
+    [ "SPI_GETMENUANIMATION", "qt__windows_8h.html#a2a5a492abfc60e8874ab793e50bf54d5", null ],
+    [ "SPI_GETMENUFADE", "qt__windows_8h.html#af396e3818c405d6527bdea1c58d0473d", null ],
+    [ "SPI_GETCOMBOBOXANIMATION", "qt__windows_8h.html#accef428dfcf44b01355515db638a52b7", null ],
+    [ "SPI_GETTOOLTIPANIMATION", "qt__windows_8h.html#a9b86c8ea82e2ca06bf11da8aa4262551", null ],
+    [ "SPI_GETTOOLTIPFADE", "qt__windows_8h.html#ae1b9ad2a0ca986294addac37656758dc", null ],
+    [ "SPI_GETUIEFFECTS", "qt__windows_8h.html#af2f18cf0216a31f50a9bafd2c9dc2ca7", null ],
+    [ "SPI_GETKEYBOARDCUES", "qt__windows_8h.html#a4e2b1b26941b506245c26f0b4fdf9632", null ],
+    [ "SPI_GETGRADIENTCAPTIONS", "qt__windows_8h.html#a8743e7bc66f218544a418a411d62fbbb", null ],
+    [ "IDC_HAND", "qt__windows_8h.html#acb501eb4f704009e639bde2866449959", null ],
+    [ "WM_MOUSEWHEEL", "qt__windows_8h.html#a9d3b2a3f4572e6ec9d3ce57fec9d8083", null ],
+    [ "WM_MOUSEHWHEEL", "qt__windows_8h.html#a7b2918d422b3a1fe86a641f74818bb55", null ],
+    [ "ETO_PDY", "qt__windows_8h.html#aa9cd5cc0e9c78fd9c6151e7e5b1b6046", null ],
+    [ "COLOR_GRADIENTACTIVECAPTION", "qt__windows_8h.html#a6997a7be65375c3bd5160b00476c7051", null ],
+    [ "COLOR_GRADIENTINACTIVECAPTION", "qt__windows_8h.html#a2079ce6c6ab1dd9080f17624ecc1d720", null ],
+    [ "SPI_GETFLATMENU", "qt__windows_8h.html#a536fddbff6376e31c2a9ba15e33f3e52", null ],
+    [ "CS_DROPSHADOW", "qt__windows_8h.html#a04ea24b0954a738d8b682c0c77bfbbef", null ],
+    [ "CLEARTYPE_QUALITY", "qt__windows_8h.html#ad60c8d6e1fb1e4c2fe9821b1b9da2c61", null ]
+];

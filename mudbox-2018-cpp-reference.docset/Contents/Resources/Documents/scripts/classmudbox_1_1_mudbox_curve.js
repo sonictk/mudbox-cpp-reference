@@ -1,0 +1,38 @@
+var classmudbox_1_1_mudbox_curve =
+[
+    [ "CurveType", "classmudbox_1_1_mudbox_curve.html#a007dea27057008224e9da69eaeca8606", [
+      [ "CT_3D", "classmudbox_1_1_mudbox_curve.html#a007dea27057008224e9da69eaeca8606afa13fcfd3187bf0b38fd9f0fd3eee07d", null ],
+      [ "CT_2D", "classmudbox_1_1_mudbox_curve.html#a007dea27057008224e9da69eaeca8606a92865513f32ffaf964f86aeb65cbdeec", null ]
+    ] ],
+    [ "MudboxCurve", "classmudbox_1_1_mudbox_curve.html#a965e82c5675a0ea7395b1f35802f11c8", null ],
+    [ "~MudboxCurve", "classmudbox_1_1_mudbox_curve.html#a685067937b5eb7bb006d8c3ea4086013", null ],
+    [ "AddPoint", "classmudbox_1_1_mudbox_curve.html#abff8900fc740d87d406e3d5b1c32e58a", null ],
+    [ "SetPoint", "classmudbox_1_1_mudbox_curve.html#af6b82b6f22f5a590a365c6238f2f730b", null ],
+    [ "SetPoint", "classmudbox_1_1_mudbox_curve.html#a3bf3e53d895496c20ba398d6528bb37f", null ],
+    [ "Point", "classmudbox_1_1_mudbox_curve.html#a77fe4a67905ff9e367bdfc5039eccb69", null ],
+    [ "WorldPosition", "classmudbox_1_1_mudbox_curve.html#a379bc6219c6aa133c7f106a8116a6ecd", null ],
+    [ "PointCount", "classmudbox_1_1_mudbox_curve.html#a406610650a6e9a6d19f56c84c3811c80", null ],
+    [ "Point", "classmudbox_1_1_mudbox_curve.html#aac2c0fa2263767190e0dba946b5dab3e", null ],
+    [ "Points", "classmudbox_1_1_mudbox_curve.html#a50d3d78fdd2d678ea814ea002eac31c0", null ],
+    [ "InsertPoint", "classmudbox_1_1_mudbox_curve.html#af6e41c4a305f873958ff62e0ced6f5cf", null ],
+    [ "RemovePoint", "classmudbox_1_1_mudbox_curve.html#a06a431db514811a945a5e15023c87518", null ],
+    [ "Serialize", "classmudbox_1_1_mudbox_curve.html#ab6cacad27ca0e44222c82c39dbc3b767", null ],
+    [ "BoundingBox", "classmudbox_1_1_mudbox_curve.html#a1e4683bea80ae186f564c7982b1a0753", null ],
+    [ "CopyTo", "classmudbox_1_1_mudbox_curve.html#a77f13cfbb15d9b648b2988fab7c75235", null ],
+    [ "IsConstrainedToSurface", "classmudbox_1_1_mudbox_curve.html#a064cb1b92ea419e53ea450d14621801c", null ],
+    [ "CreateSpline", "classmudbox_1_1_mudbox_curve.html#a501af8d536ac132d07eecf7394508e77", null ],
+    [ "SplineSmoothness", "classmudbox_1_1_mudbox_curve.html#a0115c454aadea372d725f9aa4663c3e3", null ],
+    [ "SetSplineSmoothness", "classmudbox_1_1_mudbox_curve.html#a72421e074d5952015b0a6d1588cbf3a1", null ],
+    [ "BeginEdit", "classmudbox_1_1_mudbox_curve.html#a8a058f8a0092e006e390d658f092ec8f", null ],
+    [ "EndEdit", "classmudbox_1_1_mudbox_curve.html#a09e11d64c79ba5030e03ef9ceded2f19", null ],
+    [ "IsBeingEdited", "classmudbox_1_1_mudbox_curve.html#a7dd8df0244a5cc4d2790927ff51e1734", null ],
+    [ "Spline", "classmudbox_1_1_mudbox_curve.html#a58f20aed73225dd0214785fad3810493", null ],
+    [ "ToSplineIndex", "classmudbox_1_1_mudbox_curve.html#adc56f5509b9c3d58aab7ece956922f51", null ],
+    [ "IsSpline", "classmudbox_1_1_mudbox_curve.html#a43c4fda6af6ea1aada044ae69b7fd197", null ],
+    [ "ProjectPoint", "classmudbox_1_1_mudbox_curve.html#acdb183e22434f5b013f40cffb9502c7c", null ],
+    [ "SetCurveType", "classmudbox_1_1_mudbox_curve.html#a692a45eced1232d6bdcbea9d2627212a", null ],
+    [ "CurveType", "classmudbox_1_1_mudbox_curve.html#ae28dc9344376fabda130c85b50381dae", null ],
+    [ "FalloffCurve", "classmudbox_1_1_mudbox_curve.html#a636bca6cb9ef484ee47891b886a33c33", null ],
+    [ "m_vPoints", "classmudbox_1_1_mudbox_curve.html#ae9de2ce6b7a17d7ac1da13503b2dd9a7", null ],
+    [ "m_eCurveType", "classmudbox_1_1_mudbox_curve.html#a63b8760b82b6414f6153896174642cbb", null ]
+];

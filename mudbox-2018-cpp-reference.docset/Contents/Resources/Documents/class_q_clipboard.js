@@ -1,0 +1,36 @@
+var class_q_clipboard =
+[
+    [ "Mode", "class_q_clipboard.html#a46c8a310cf4c094f8c80e1cb8dc1f911", [
+      [ "Clipboard", "class_q_clipboard.html#a46c8a310cf4c094f8c80e1cb8dc1f911a61f73e807efce494766b8ab0b12e7a42", null ],
+      [ "Selection", "class_q_clipboard.html#a46c8a310cf4c094f8c80e1cb8dc1f911a72808c3beb66baf97932c94a8ee433c5", null ],
+      [ "FindBuffer", "class_q_clipboard.html#a46c8a310cf4c094f8c80e1cb8dc1f911a48cc5e5e3c2d0db31da9a2031575072c", null ],
+      [ "LastMode", "class_q_clipboard.html#a46c8a310cf4c094f8c80e1cb8dc1f911a5d8229c612f9c7375db28902bb35cec8", null ]
+    ] ],
+    [ "clear", "class_q_clipboard.html#aa5ad9042a927727e0f3af0c97f250e90", null ],
+    [ "supportsSelection", "class_q_clipboard.html#a34dcf1a05aecfab3826916c31ef5a5c6", null ],
+    [ "supportsFindBuffer", "class_q_clipboard.html#a0081aec50cecfbf3243921fcace4430a", null ],
+    [ "ownsSelection", "class_q_clipboard.html#a2f41bc569b62d0561e7b03c1b9d7ff3d", null ],
+    [ "ownsClipboard", "class_q_clipboard.html#a1e13f3fc6bb3555d786f3a6719f88e62", null ],
+    [ "ownsFindBuffer", "class_q_clipboard.html#aa8a7ce4287d2e8beac3aa4c8fbf7d5fa", null ],
+    [ "text", "class_q_clipboard.html#a463c10ebc1190b6d53212bb5db1401b2", null ],
+    [ "text", "class_q_clipboard.html#aed75a59260a443429287a86ef4a1546b", null ],
+    [ "setText", "class_q_clipboard.html#a7dd6331f43699609566ef91e0abc2d9c", null ],
+    [ "mimeData", "class_q_clipboard.html#a8c6dd890a6bd8e29609554e26b1b87e9", null ],
+    [ "setMimeData", "class_q_clipboard.html#a3dd2d64932d23c605926d3567aaec3eb", null ],
+    [ "image", "class_q_clipboard.html#ae4366a34d2662583cd67cbe30ee951cf", null ],
+    [ "pixmap", "class_q_clipboard.html#a1ae52456793699797ac93fa966c3a7d1", null ],
+    [ "setImage", "class_q_clipboard.html#a7ae46fdeae0abec119d114bce84e8229", null ],
+    [ "setPixmap", "class_q_clipboard.html#ad8633a4302a6e3277d31befb0cf48eda", null ],
+    [ "changed", "class_q_clipboard.html#ab5ecd58d11934cf0da76f5532740fccc", null ],
+    [ "selectionChanged", "class_q_clipboard.html#a1d85de554564e69188e34457b463de1b", null ],
+    [ "findBufferChanged", "class_q_clipboard.html#a8ce6bd27f981bdfd40172d41c3f0403a", null ],
+    [ "dataChanged", "class_q_clipboard.html#aa2c9fbe0f148cbc8e5f943dd4e6c85c9", null ],
+    [ "connectNotify", "class_q_clipboard.html#af81c8002cb7b4d8b072ab6dc6c9fcd03", null ],
+    [ "event", "class_q_clipboard.html#ae51b661f62035ae9a66ddd1bd0ddddb5", null ],
+    [ "QApplication", "class_q_clipboard.html#a8da0851f3642ab58835a6914112b9f05", null ],
+    [ "QApplicationPrivate", "class_q_clipboard.html#a6b7c899e19497784e6012c1da3205e48", null ],
+    [ "QBaseApplication", "class_q_clipboard.html#a7d60bac3ac5684ebdecbcd83a1614905", null ],
+    [ "QDragManager", "class_q_clipboard.html#aac38f93f0cf61db3a2022ce3f84cfec8", null ],
+    [ "QMimeSource", "class_q_clipboard.html#a84e4a3f5145a2d6f894f6c5e5a306caa", null ],
+    [ "QPlatformClipboard", "class_q_clipboard.html#ab532cab4399bb84a5ca17d0aa79f3b94", null ]
+];

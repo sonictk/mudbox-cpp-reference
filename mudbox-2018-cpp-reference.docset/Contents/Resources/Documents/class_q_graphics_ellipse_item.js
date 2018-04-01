@@ -1,0 +1,25 @@
+var class_q_graphics_ellipse_item =
+[
+    [ "Type", "class_q_graphics_ellipse_item.html#a0b887f38fa71033f0904f8e2330b6815a56205085b8e5cc892bead298d181fae6", null ],
+    [ "QGraphicsEllipseItem", "class_q_graphics_ellipse_item.html#a7418371a460512435baa2f3090efc0db", null ],
+    [ "QGraphicsEllipseItem", "class_q_graphics_ellipse_item.html#ac7ffba7fa73ee4e5d3bd013fd6e5ac00", null ],
+    [ "QGraphicsEllipseItem", "class_q_graphics_ellipse_item.html#ae5b39d6a4838c5b737177819b5fb0518", null ],
+    [ "~QGraphicsEllipseItem", "class_q_graphics_ellipse_item.html#a61d3eae3b169e17a9869564762062e03", null ],
+    [ "rect", "class_q_graphics_ellipse_item.html#ac12e0c52263aec5f814738917fbdaaa4", null ],
+    [ "setRect", "class_q_graphics_ellipse_item.html#a5c6ed7a2f42816b164b283ac87e9f1d9", null ],
+    [ "setRect", "class_q_graphics_ellipse_item.html#af2b0fbb979971d15e5f2b02a2a7d1abf", null ],
+    [ "startAngle", "class_q_graphics_ellipse_item.html#af52508f592bced76b9bdc60c6ca5ad01", null ],
+    [ "setStartAngle", "class_q_graphics_ellipse_item.html#a3a3d7a1bd17d194bea6c6c881b004d33", null ],
+    [ "spanAngle", "class_q_graphics_ellipse_item.html#a7c7656c59810ce346a1345b8959c9c0b", null ],
+    [ "setSpanAngle", "class_q_graphics_ellipse_item.html#a78e9c4c2237c5f528a914679ec43c713", null ],
+    [ "boundingRect", "class_q_graphics_ellipse_item.html#a7f9aac15380d5c7a5b33979d006275d7", null ],
+    [ "shape", "class_q_graphics_ellipse_item.html#a6e4b5bc28b84f0ec515bb76daba69390", null ],
+    [ "contains", "class_q_graphics_ellipse_item.html#a03f8048e8bea75ef17ce71a2015b26ed", null ],
+    [ "paint", "class_q_graphics_ellipse_item.html#aa77fc5d2da89e1f09b09f7c6724ed721", null ],
+    [ "isObscuredBy", "class_q_graphics_ellipse_item.html#a9cc86c25d9cc32036fb9b7c901dc011a", null ],
+    [ "opaqueArea", "class_q_graphics_ellipse_item.html#a6536d8f0f77df4a0273ce62bddd145bd", null ],
+    [ "type", "class_q_graphics_ellipse_item.html#a4609e33962a63a3b71f17de25e8745aa", null ],
+    [ "supportsExtension", "class_q_graphics_ellipse_item.html#a80468599815f6cce61a1632f034ec780", null ],
+    [ "setExtension", "class_q_graphics_ellipse_item.html#a7a1d6a5e072e46b8a97e52405802c419", null ],
+    [ "extension", "class_q_graphics_ellipse_item.html#ad4afca9724aef653f1aa09b52da1b915", null ]
+];

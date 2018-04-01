@@ -1,0 +1,27 @@
+var class_q_web_hit_test_result =
+[
+    [ "QWebHitTestResult", "class_q_web_hit_test_result.html#a6c06b35abbfb2fec3d40f4ff5e69a06b", null ],
+    [ "QWebHitTestResult", "class_q_web_hit_test_result.html#aaeba0ba9349c9aba90a05f7d58560e45", null ],
+    [ "~QWebHitTestResult", "class_q_web_hit_test_result.html#afa22f65b859e712cd542f7e4c8967ad2", null ],
+    [ "operator=", "class_q_web_hit_test_result.html#a9ede5bfbfcd45fe4808b1c4a6d1f1466", null ],
+    [ "isNull", "class_q_web_hit_test_result.html#ac02f2a4d7312eb91f40980adfd4e31b2", null ],
+    [ "pos", "class_q_web_hit_test_result.html#aed678181a25af532cf6bdc107830fed4", null ],
+    [ "boundingRect", "class_q_web_hit_test_result.html#a8457f1548c3fedd0f16eac04ffc938fa", null ],
+    [ "enclosingBlockElement", "class_q_web_hit_test_result.html#a5f0d294f45780045426a8d09e9df5a6c", null ],
+    [ "title", "class_q_web_hit_test_result.html#aec7f0fb0be1d3a0a946f0ded3a860d20", null ],
+    [ "linkText", "class_q_web_hit_test_result.html#aa634e531973505ef7fecae71eb0cf1b9", null ],
+    [ "linkUrl", "class_q_web_hit_test_result.html#acd99b5f4109480b6bdaada8945c82bf6", null ],
+    [ "linkTitle", "class_q_web_hit_test_result.html#a9a041d203501a22767e89bef34fecb6e", null ],
+    [ "linkTargetFrame", "class_q_web_hit_test_result.html#a7b0620da5b1d9b5dca4d0e6ba532ace0", null ],
+    [ "linkElement", "class_q_web_hit_test_result.html#a2d0c6df9e239b52bae5374a35f9ae498", null ],
+    [ "alternateText", "class_q_web_hit_test_result.html#a3e57490cd98f5bb8eab06d8b48c86986", null ],
+    [ "imageUrl", "class_q_web_hit_test_result.html#aa8a8e78300ad97ee03968783de1449a6", null ],
+    [ "pixmap", "class_q_web_hit_test_result.html#a2156a4debe5b475477073c0baabd5553", null ],
+    [ "isContentEditable", "class_q_web_hit_test_result.html#ad487eb802c469aa29a546b0636491378", null ],
+    [ "isContentSelected", "class_q_web_hit_test_result.html#ab72a335fabec35bcb94f457b93d1b4a3", null ],
+    [ "element", "class_q_web_hit_test_result.html#a5a651b52475c54ef3f1ea64c9cb2d23a", null ],
+    [ "frame", "class_q_web_hit_test_result.html#a4b0966c5a43508d4b64461b0bd7b2959", null ],
+    [ "QWebFrame", "class_q_web_hit_test_result.html#a654832701d42bdc4e1d9c56c8cc2f5a5", null ],
+    [ "QWebPagePrivate", "class_q_web_hit_test_result.html#aebb60218ae040a58c5855965aac62eaa", null ],
+    [ "QWebPage", "class_q_web_hit_test_result.html#aeb4ede324f53f3f5e8c31b614e3995bf", null ]
+];

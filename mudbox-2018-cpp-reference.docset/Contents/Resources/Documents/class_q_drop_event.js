@@ -1,0 +1,27 @@
+var class_q_drop_event =
+[
+    [ "QDropEvent", "class_q_drop_event.html#a696b7923b83ff915dad5810d6d6e9116", null ],
+    [ "~QDropEvent", "class_q_drop_event.html#a2e112510d5a7d8149dd3065a113ad9ed", null ],
+    [ "pos", "class_q_drop_event.html#aa71ab50fa6fd03e0986ee773f9496b8b", null ],
+    [ "mouseButtons", "class_q_drop_event.html#a6bdb7481a867dd8d6d9d87edbc7b19e1", null ],
+    [ "keyboardModifiers", "class_q_drop_event.html#aeea5f0d0cc8d34ffe8cecaca9ae6f850", null ],
+    [ "possibleActions", "class_q_drop_event.html#a87aff47fb69ed46857091329d1fa6d7d", null ],
+    [ "proposedAction", "class_q_drop_event.html#a532a30d4b548a7ef9f15e9ecab3136ae", null ],
+    [ "acceptProposedAction", "class_q_drop_event.html#a5b93865d4e4c00de07144cdd9f72b520", null ],
+    [ "dropAction", "class_q_drop_event.html#a16417b84e155915e0e1e82faaf38ae4e", null ],
+    [ "setDropAction", "class_q_drop_event.html#a8398a2e3512db79cc940f72627d78150", null ],
+    [ "source", "class_q_drop_event.html#a1d6e8dcddefc679891e6b1d01a2d9ca7", null ],
+    [ "mimeData", "class_q_drop_event.html#a66be8fa29f4bb82c043b30161e8b5c88", null ],
+    [ "format", "class_q_drop_event.html#a792e83dd59c0f5f71c57340c48193d24", null ],
+    [ "encodedData", "class_q_drop_event.html#a03eb75318ee691a2bf4512b435266001", null ],
+    [ "provides", "class_q_drop_event.html#ad4d15636cd767f8cd7c8a1e8a3097dd0", null ],
+    [ "QApplication", "class_q_drop_event.html#a8da0851f3642ab58835a6914112b9f05", null ],
+    [ "p", "class_q_drop_event.html#a51bbfeb3c533398d445a2f361fc02f13", null ],
+    [ "mouseState", "class_q_drop_event.html#ac7e6e014bc2505574034974e2256b8e9", null ],
+    [ "modState", "class_q_drop_event.html#a48d8dd241dcc57a4feae414b3b72723d", null ],
+    [ "act", "class_q_drop_event.html#a1cedd03e30d4047a06b0188718e1eb6a", null ],
+    [ "drop_action", "class_q_drop_event.html#a8bba8fa65c4b3f5463ff84461091e947", null ],
+    [ "default_action", "class_q_drop_event.html#a0dfa53a25fa19c231a32eb42275b9652", null ],
+    [ "mdata", "class_q_drop_event.html#af7f6b71ce1073e8a6e067b6a7306e8d7", null ],
+    [ "fmts", "class_q_drop_event.html#a792469465d0241c6affe4dc5330a5fc7", null ]
+];

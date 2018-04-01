@@ -1,0 +1,25 @@
+var classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta =
+[
+    [ "PSDFileMeta", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#ae4352beed0adec5181d13ab3dff95879", null ],
+    [ "~PSDFileMeta", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a3983f3e5d33c53e7f1f0132243558e68", null ],
+    [ "GetXResolution", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#ad1d4a372e8be17b752a7777dd81cac68", null ],
+    [ "SetXResolution", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a1eff9304e7599e2de9ff132e61645ae2", null ],
+    [ "GetYResolution", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#ae4d542646d9bbf4edd42bd433ec0311d", null ],
+    [ "SetYResolution", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#afe1c6738d2a7d80881ae4b4e4880f09d", null ],
+    [ "GetResUnit", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a5e19e03715d1bda60b963525175d99ed", null ],
+    [ "SetResUnit", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a4d1edb2c5238a479565af03d8b371534", null ],
+    [ "SetFileHeaderStruct", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#ad3a0ff399bd1b92e02167ce4090d665b", null ],
+    [ "GetNbLayers", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a7f68f3bda8c48d27c5cecdc4ba62b145", null ],
+    [ "SetNbLayers", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a5646cd6cfda94d5d47096a4df874b556", null ],
+    [ "SetColorModeData", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a1d91e88b102ca76bd1502bc90e1204c5", null ],
+    [ "LayerStateValid", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a2c880196a4b2abdc577f8594827492a8", null ],
+    [ "GetLayerState", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a3fa680b1805ab982cf828b7cfc065b35", null ],
+    [ "SetLayerState", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a70379bffa776c7fddb91b6f6052f6218", null ],
+    [ "Synch", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a9909c9dcf8e3f1aca37c0eb086415bbc", null ],
+    [ "PSDFile", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#aca18074a083582edeff2eb8ef004ecfa", null ],
+    [ "m_hdr", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a1ce27c70a859129882966ef8d2f1f3f3", null ],
+    [ "m_vi", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a8e4ed7c37545a12b1fa771f22da56523", null ],
+    [ "m_pThumbnail", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#aa61838050c9214d90431c3c4a7e2348a", null ],
+    [ "m_numLayers", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#a0e059d7d778c2f5b94f3930a9d49f765", null ],
+    [ "m_vImageRes", "classadsk_1_1lib_p_s_d_1_1_p_s_d_file_meta.html#ac22b2e162ed12ddf6154e16d63d80827", null ]
+];
