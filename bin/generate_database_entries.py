@@ -43,6 +43,7 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
         return
 
     soup = BeautifulSoup(html, 'html.parser')
+    timeout = 3
 
     for h2 in soup.find_all('h2', {'class': 'groupheader'}):
         # Now find all public types defined in the class and create
@@ -66,10 +67,17 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                 if mudbox_version == '2017':
                     type_url = type_url.replace('#!/url=./cpp_ref/', '')
                 if type_name and type_url:
-                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                            ' VALUES (\'{class_name}::{type_name}\', \'Type\', \'{path}\')'
-                            .format(class_name=class_name, type_name=type_name, path=type_url))
-        elif h2.a and h2.a.get('name') == 'pub-methods':
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{class_name}::{type_name}\', \'Type\', \'{path}\')'
+                                .format(class_name=class_name, type_name=type_name, path=type_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{class_name}::{type_name}\', \'Type\', \'{path}\')'
+                                    .format(class_name=class_name, type_name=type_name, path=type_url))
+
+        elif h2.a and h2.a.get('name') in ('pub-methods', 'member-group'):
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
                 {'class' : 'memItemRight'}
@@ -87,11 +95,20 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                 if mudbox_version == '2017':
                     method_url = method_url.replace('#!/url=./cpp_ref/', '')
                 if method_name and method_url:
-                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                            ' VALUES (\'{class_name}::{method_name}\', \'Method\', \'{path}\')'
-                            .format(class_name=class_name,
-                                    method_name=method_name,
-                                    path=method_url))
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{class_name}::{method_name}\', \'Method\', \'{path}\')'
+                                .format(class_name=class_name,
+                                        method_name=method_name,
+                                        path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{class_name}::{method_name}\', \'Method\', \'{path}\')'
+                                    .format(class_name=class_name,
+                                            method_name=method_name,
+                                            path=method_url))
+
         elif h2.a and h2.a.get('name') == 'pub-static-methods':
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
@@ -110,11 +127,20 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                 if mudbox_version == '2017':
                     method_url = method_url.replace('#!/url=./cpp_ref/', '')
                 if method_name and method_url:
-                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                            ' VALUES (\'{class_name}::{method_name}\', \'Function\', \'{path}\')'
-                            .format(class_name=class_name,
-                                    method_name=method_name,
-                                    path=method_url))
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{class_name}::{method_name}\', \'Function\', \'{path}\')'
+                                .format(class_name=class_name,
+                                        method_name=method_name,
+                                        path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{class_name}::{method_name}\', \'Function\', \'{path}\')'
+                                    .format(class_name=class_name,
+                                            method_name=method_name,
+                                            path=method_url))
+
         elif h2.a and h2.a.get('name') == 'pro-methods':
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
@@ -127,11 +153,19 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                 method_name = m.a.string
                 method_url = m.a.get('href')
                 if method_name and method_url:
-                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                            ' VALUES (\'{class_name}::{method_name}\', \'Method\', \'{path}\')'
-                            .format(class_name=class_name,
-                                    method_name=method_name,
-                                    path=method_url))
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{class_name}::{method_name}\', \'Method\', \'{path}\')'
+                                .format(class_name=class_name,
+                                        method_name=method_name,
+                                        path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{class_name}::{method_name}\', \'Method\', \'{path}\')'
+                                    .format(class_name=class_name,
+                                            method_name=method_name,
+                                            path=method_url))
 
 
 def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018', timeout=120.0):
@@ -141,6 +175,7 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
     cur = conn.cursor()
     # NOTE: This is present in some of the HTML files for some weird reason.
     weird_substring = '_1_1_'
+    weird_substring2 = '_1_1'
     for f in filenames:
         if os.path.splitext(f)[-1] == '.html':
             if '-members' in f:
@@ -148,6 +183,8 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
 
             if weird_substring in f:
                 sanitized_filename = f.replace(weird_substring, '_')
+            elif weird_substring2 in f:
+                sanitized_filename = f.replace(weird_substring2, '_')
             else:
                 sanitized_filename = f
 
@@ -156,48 +193,93 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
                 except:
                     print('error occurred trying to parse: {}'.format(f))
                     continue
-                print('class name determined as: {}'.format(class_name))
+                # print('class name determined as: {}'.format(class_name))
                 write_entry_for_class(cur, class_name, f, docs_root, mudbox_version)
 
             elif f.startswith('classmudbox_'):
                 try:
-                    class_name = 'mudbox::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('classmudbox_')[-1].split('_')])
+                    class_name = 'mudbox::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('classmudbox_')[-1].split('_') if a])
                 except:
                     print('error occurred trying to parse: {}'.format(f))
                     continue
-                print('class name determined as: {}'.format(class_name))
+                # print('class name determined as: {}'.format(class_name))
                 write_entry_for_class(cur, class_name, f, docs_root, mudbox_version)
 
             elif f.startswith('struct_'):
-                struct_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('struct_')[-1].split('_') if a])
-                print('struct name determined as: {}'.format(struct_name))
-                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                        ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+                try:
+                    struct_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('struct_')[-1].split('_') if a])
+                except:
+                    print('error occurred trying to parse: {}'.format(f))
+                    continue
+                # print('struct name determined as: {}'.format(struct_name))
+                try:
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                            ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+                except:
+                    time.sleep(timeout)
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
 
             # NOTE: Again, because the documentation is inconsistent with the prefixes.
             elif f.startswith('structmudbox_'):
-                struct_name = 'mudbox::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('structmudbox_')[-1].split('_')])
-                print('struct name determined as: {}'.format(struct_name))
-                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                        ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+                try:
+                    struct_name = 'mudbox::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('structmudbox_')[-1].split('_') if a])
+                except:
+                    print('error occurred trying to parse: {}'.format(f))
+                    continue
+                # print('struct name determined as: {}'.format(struct_name))
+                try:
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                            ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+                except:
+                    time.sleep(timeout)
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
 
             elif f.startswith('structadsk_'):
-                struct_name = 'adsk::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('structadsk_')[-1].split('_')])
-                print('struct name determined as: {}'.format(struct_name))
-                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                        ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+                try:
+                    struct_name = 'adsk::' + ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('structadsk_')[-1].split('_') if a])
+                except:
+                    print('error occurred trying to parse: {}'.format(f))
+                    continue
+                # print('struct name determined as: {}'.format(struct_name))
+                try:
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                            ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
+                except:
+                    time.sleep(timeout)
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{name}\', \'Struct\', \'{path}\')'.format(name=struct_name, path=f))
 
             elif f.startswith('namespace'):
-                namespace_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].replace('namespace', '').split('_') if a])
-                print('namespace name determined as: {}'.format(namespace_name))
-                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                        ' VALUES (\'{name}\', \'Namespace\', \'{path}\')'.format(name=namespace_name, path=f))
+                try:
+                    namespace_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].replace('namespace', '').split('_') if a])
+                except:
+                    print('error occurred trying to parse: {}'.format(f))
+                    continue
+                # print('namespace name determined as: {}'.format(namespace_name))
+                try:
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                            ' VALUES (\'{name}\', \'Namespace\', \'{path}\')'.format(name=namespace_name, path=f))
+                except:
+                    time.sleep(timeout)
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{name}\', \'Namespace\', \'{path}\')'.format(name=namespace_name, path=f))
 
             elif '-example' in f:
-                example_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('-example')[0].split('_') if a]) + 'Example'
-                print('example name determined as: {}'.format(example_name))
-                cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
-                        ' VALUES (\'{name}\', \'Sample\', \'{path}\')'.format(name=example_name, path=f))
+                try:
+                    example_name = ''.join([a[0].upper() + a[1:] for a in os.path.splitext(sanitized_filename)[0].split('-example')[0].split('_') if a]) + 'Example'
+                except:
+                    print('error occurred trying to parse: {}'.format(f))
+                    continue
+                # print('example name determined as: {}'.format(example_name))
+                try:
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                            ' VALUES (\'{name}\', \'Sample\', \'{path}\')'.format(name=example_name, path=f))
+                except:
+                    time.sleep(timeout)
+                    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                ' VALUES (\'{name}\', \'Sample\', \'{path}\')'.format(name=example_name, path=f))
 
     try: conn.commit()
     except sqlite3.OperationalError:
@@ -209,7 +291,7 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
         conn.close()
 
 
-def main(mudbox_version='2018'):
+def main(mudbox_version='2018', num_threads=1):
     """This is the main entry point of the program."""
     logger = logging.getLogger(__name__)
     database_file_path = os.path.join(os.path.dirname(
@@ -234,7 +316,10 @@ def main(mudbox_version='2018'):
     all_files = os.listdir(docs_root)
     logger.debug('Total number of files to process: {0}'.format(len(all_files)))
 
-    num_threads = 4
+    if num_threads == 1:
+        logger.info('Writing to database...')
+        write_entries(database_file_path, all_files, docs_root, mudbox_version)
+
     chunk_size = len(all_files) / num_threads
     jobs = []
     for s in chunk(all_files, chunk_size):
@@ -246,6 +331,7 @@ def main(mudbox_version='2018'):
     [j.start() for j in jobs]
     logger.info('Jobs submitted, please wait for them to complete!')
 
+
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     parser = argparse.ArgumentParser(description='This program generates the database entries for the docset.program')
@@ -253,5 +339,9 @@ if __name__ == '__main__':
                         '--mudboxVersion',
                         default='2018',
                         help='The mudbox version to generate the docset for.')
+    parser.add_argument('-j',
+                        '--numThreads',
+                        default=4,
+                        help='The number of threads to use when generating the docset. Too many threads might result in concurrency issues.')
     args = parser.parse_args()
-    main(args.mudboxVersion)
+    main(args.mudboxVersion, args.numThreads)
