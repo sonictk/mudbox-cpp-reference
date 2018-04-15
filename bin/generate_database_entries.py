@@ -69,7 +69,8 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                     cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
                             ' VALUES (\'{class_name}::{type_name}\', \'Type\', \'{path}\')'
                             .format(class_name=class_name, type_name=type_name, path=type_url))
-        elif h2.a and h2.a.get('name') == 'pub-methods':
+
+        elif h2.a and h2.a.get('name') in ('pub-methods', 'member-group'):
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
                 {'class' : 'memItemRight'}
@@ -92,6 +93,7 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                             .format(class_name=class_name,
                                     method_name=method_name,
                                     path=method_url))
+
         elif h2.a and h2.a.get('name') == 'pub-static-methods':
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
@@ -115,6 +117,7 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                             .format(class_name=class_name,
                                     method_name=method_name,
                                     path=method_url))
+
         elif h2.a and h2.a.get('name') == 'pro-methods':
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
