@@ -66,13 +66,20 @@ def format_file(all_files, docs_path, output_path):
                     new_tag['class'] = 'dashAnchor'
                     td.insert(0, new_tag)
 
+        # TODO: (sonictk) Need to remove the Microsoft Translation bullshit here.
+        for div in soup.find_all('div'):
+            div_id = div.get('id')
+            if div_id and div_id == 'MicrosoftTranslatorWidget':
+                div.decompose()
+                break
+
         with open(os.path.join(output_path, f), 'w') as of:
             of.write(str(soup))
 
     logger.debug('Job complete!')
 
 
-def main(mudbox_version, docs_path, output_path):
+def main(docs_path, output_path):
     """This is the main entry point of the program."""
 
     logger = logging.getLogger(__name__)
@@ -135,11 +142,6 @@ def main(mudbox_version, docs_path, output_path):
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     parser = argparse.ArgumentParser(description='This program formats the HTML documentation so that it is usable in the docset.')
-    parser.add_argument('-mv',
-                        '--mudboxVersion',
-                        default='2018',
-                        help='The mudbox version to generate the docset for.')
-
     docs_path = os.path.join(os.path.dirname(
                             os.path.dirname(os.path.abspath(__file__))
                         ),
@@ -160,4 +162,4 @@ if __name__ == '__main__':
                         help='The directory to write all the formatted files to.')
 
     args = parser.parse_args()
-    main(args.mudboxVersion, args.input, args.output)
+    main(args.input, args.output)
