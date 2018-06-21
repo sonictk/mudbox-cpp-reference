@@ -344,6 +344,10 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
     weird_substring2 = '_1_1'
     for f in filenames:
         if os.path.splitext(f)[-1] == '.html':
+            # NOTE: (sonictk) Skip all Qt documentation, that should be done separately
+            if f.startswith('class_q_') or f.startswith('q'):
+                continue
+
             if '-members' in f:
                 continue
 
