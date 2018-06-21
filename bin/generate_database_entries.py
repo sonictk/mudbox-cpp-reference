@@ -30,6 +30,172 @@ def clean_database(database_file_path):
         cur.execute('CREATE UNIQUE INDEX anchor ON searchIndex (name, type, path);')
 
 
+def write_entry_for_namespace(cur, namespace_name, path, docs_root, mudbox_version):
+    cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                ' VALUES (\'{name}\', \'Class\', \'{path}\')'.format(name=namespace_name, path=path))
+
+    # Now start finding items within the class pages to add
+    # additional entries for
+    try:
+        html = open(os.path.join(docs_root, path)).read()
+    except:
+        print('Failed to read file: {}'.format(path))
+        return
+
+    soup = BeautifulSoup(html, 'html.parser')
+    timeout = 3
+
+    for h2 in soup.find_all('h2', {'class': 'groupheader'}):
+        # NOTE: (sonictk) Skip nested classes, they're documented separately in
+        # each individual class HTML file
+        if h2.a and h2.a.get('name') == 'nested-classes':
+            continue
+
+        elif h2.a and h2.a.get('name') in ('pub-types', 'typedef-members'):
+            items = h2.parent.parent.parent.find_all(
+                'td',
+                {'class' : 'memItemRight'}
+            )
+            for pub_type_item in items:
+                if 'el' not in pub_type_item.a.get('class'):
+                    continue
+                if 'inherit' in pub_type_item.parent.get('class'):
+                    continue
+                type_name = pub_type_item.a.string
+                type_url = pub_type_item.a.get('href')
+
+                # NOTE: For mudbox 2017, it seems the URL is
+                # formatted differently
+                if mudbox_version == '2017':
+                    type_url = type_url.replace('#!/url=./cpp_ref/', '')
+                if type_name and type_url:
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{type_name}\', \'Type\', \'{path}\')'
+                                    .format(namespace_name=namespace_name, type_name=type_name, path=type_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{type_name}\', \'Type\', \'{path}\')'
+                                    .format(namespace_name=namespace_name, type_name=type_name, path=type_url))
+
+        elif h2.a and h2.a.get('name') in ('pub-methods', 'member-group'):
+            pub_methods = h2.parent.parent.parent.find_all(
+                'td',
+                {'class' : 'memItemRight'}
+            )
+            # Do not consider inherited functions
+            for m in pub_methods:
+                if 'el' not in m.a.get('class'):
+                    continue
+                if 'inherit' in m.parent.get('class'):
+                    continue
+                method_name = m.a.string
+                method_url = m.a.get('href')
+                # NOTE: For mudbox 2017, it seems the URL is
+                # formatted differently
+                if mudbox_version == '2017':
+                    method_url = method_url.replace('#!/url=./cpp_ref/', '')
+                if method_name and method_url:
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Method\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Method\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+
+        elif h2.a and h2.a.get('name') in ('pub-static-methods', 'pub-static-attribs', 'func-members'):
+            pub_methods = h2.parent.parent.parent.find_all(
+                'td',
+                {'class' : 'memItemRight'}
+            )
+            # Do not consider inherited functions
+            for m in pub_methods:
+                if 'el' not in m.a.get('class'):
+                    continue
+                if 'inherit' in m.parent.get('class'):
+                    continue
+                method_name = m.a.string
+                method_url = m.a.get('href')
+                # NOTE: For mudbox 2017, it seems the URL is
+                # formatted differently
+                if mudbox_version == '2017':
+                    method_url = method_url.replace('#!/url=./cpp_ref/', '')
+                if method_name and method_url:
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Function\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Function\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+
+        elif h2.a and h2.a.get('name') == 'pro-methods':
+            pub_methods = h2.parent.parent.parent.find_all(
+                'td',
+                {'class' : 'memItemRight'}
+            )
+            # Do not consider inherited functions
+            for m in pub_methods:
+                if 'el' not in m.a.get('class'):
+                    continue
+                method_name = m.a.string
+                method_url = m.a.get('href')
+                if method_name and method_url:
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Method\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Method\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+
+        elif h2.a and h2.a.get('name') == 'enum-members':
+            pub_methods = h2.parent.parent.parent.find_all(
+                'td',
+                {'class' : 'memItemRight'}
+            )
+            # Do not consider inherited functions
+            for m in pub_methods:
+                if 'el' not in m.a.get('class'):
+                    continue
+                method_name = m.a.string
+                method_url = m.a.get('href')
+                if method_name and method_url:
+                    try:
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Enum\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+                    except:
+                        time.sleep(timeout)
+                        cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
+                                    ' VALUES (\'{namespace_name}::{method_name}\', \'Enum\', \'{path}\')'
+                                    .format(namespace_name=namespace_name,
+                                            method_name=method_name,
+                                            path=method_url))
+
+
 def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
     cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
             ' VALUES (\'{name}\', \'Class\', \'{path}\')'.format(name=class_name, path=path))
@@ -178,6 +344,10 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
     weird_substring2 = '_1_1'
     for f in filenames:
         if os.path.splitext(f)[-1] == '.html':
+            # NOTE: (sonictk) Skip all Qt documentation, that should be done separately
+            if f.startswith('class_q_') or f.startswith('q'):
+                continue
+
             if '-members' in f:
                 continue
 
@@ -261,6 +431,8 @@ def write_entries(database_file_path, filenames, docs_root, mudbox_version='2018
                 try:
                     cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
                             ' VALUES (\'{name}\', \'Namespace\', \'{path}\')'.format(name=namespace_name, path=f))
+                    # print('class name determined as: {}'.format(class_name))
+                    write_entry_for_namespace(cur, namespace_name, f, docs_root, mudbox_version)
                 except:
                     time.sleep(timeout)
                     cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path)'
