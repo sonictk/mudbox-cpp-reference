@@ -109,7 +109,7 @@ def write_entry_for_class(cur, class_name, path, docs_root, mudbox_version):
                                             method_name=method_name,
                                             path=method_url))
 
-        elif h2.a and h2.a.get('name') == 'pub-static-methods':
+        elif h2.a and h2.a.get('name') in ('pub-static-methods', 'pub-static-attribs'):
             pub_methods = h2.parent.parent.parent.find_all(
                 'td',
                 {'class' : 'memItemRight'}
@@ -342,6 +342,7 @@ if __name__ == '__main__':
     parser.add_argument('-j',
                         '--numThreads',
                         default=4,
+                        type=int,
                         help='The number of threads to use when generating the docset. Too many threads might result in concurrency issues.')
     args = parser.parse_args()
     main(args.mudboxVersion, args.numThreads)
